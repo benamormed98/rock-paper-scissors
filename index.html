@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>rock paper scissors</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>Welcome to Rock Paper Scisoors</h1>
-	<div id="input_name">
-		<div><input type="text" id="name" placeholder="Enter your name" class="text_name"></div>
-		<div><button type="button" onclick="rename()" class="submit">Submit</button></div>
-	</div>
-	<h2 id="wel"></h2>
-	<h1 id="play">let's Play</h1>
-	<div class="score">
-		<div class="player">
-			<h1 id="player">player</h1>
-			<h2>0</h2>
-		</div>
-		<div class="computer">
-			<h1>computer</h1>
-			<h2>0</h2>
-		</div>
-	</div>
-	<h3 id="bord">choose an option</h3>
-	<div class="options">
-		<button class="r"><p>ROCK</p><img src="rock.png" ></button>
-		<button class="p"><p>PAPER</p><img src="paper.png"></button>
-		<button class="s"><p>SCISSORS</p><img src="scissors.png"></button>
-	</div>
-	
-	
-	
-
-
+    <h1 class="title">Rock Paper Scissors</h1>
+    <div id="input_name">
+        <div><input type="text" id="name" placeholder="Enter your name" class="text_name"></div>
+        <div><button type="button" onclick="rename()" class="submit">Submit</button></div>
+    </div>
+    <h2 id="wel"></h2>
+    <h1 id="play">Let's Play</h1>
+    <div class="score">
+        <div class="player">
+            <h1 id="player">player</h1>
+            <h2>0</h2>
+        </div>
+        <div class="computer">
+            <h1>computer</h1>
+            <h2>0</h2>
+        </div>
+    </div>
+    <h3 id="bord">Choose an option</h3>
+    <div class="options">
+        <button class="r"><p>ROCK</p><img src="rock.png" ></button>
+        <button class="p"><p>PAPER</p><img src="paper.png"></button>
+        <button class="s"><p>SCISSORS</p><img src="scissors.png"></button>
+    </div>
+    <table id="history">
+        <thead>
+            <tr>
+                <th>Round</th>
+                <th>Player</th>
+                <th>Computer</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 </body>
 <script type="text/javascript" src="index.js"></script>
 </html>
